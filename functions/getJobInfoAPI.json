@@ -1,0 +1,41 @@
+{
+  "name": "getX0PAJobListAPI",
+  "description": "Get X0PA Jobs based on user input",
+  "parameters": {
+    "type": "object",
+    "properties": {
+      "jobName": {
+        "type": "string",
+        "description": "The job name"
+      },
+      "location": {
+        "type": "string",
+        "description": "The city and state e.g. San Francisco, CA"
+      },
+      "minExp": {
+        "type": "number",
+        "description": "The minimum required experience of the job in years"
+      },
+      "maxExp": {
+        "type": "number",
+        "description": "The maximun required experience of the job in years"
+      },
+      "minSalary": {
+        "type": "number",
+        "description": "The minimum salary of the job"
+      },
+      "maxSalary": {
+        "type": "number",
+        "description": "The maximun salary of the job"
+      },
+      "IsBlueCollar": {
+        "type": "number",
+        "description": "The maximun salary A B C"
+      }
+    },
+    "required": [
+      "jobName",
+      "minSalary"
+    ]
+  }
+}
